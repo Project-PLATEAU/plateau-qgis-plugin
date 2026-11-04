@@ -249,12 +249,13 @@ class CityObjectParser:
         nogeom_emitted = False  # NoGeometry な Feature が出力済みかどうか
 
         # リスク属性
-        if processor.disaster_risk_attr_conatiner_path:
-            for risk in elem.iterfind(
-                processor.disaster_risk_attr_conatiner_path + "/*", nsmap
-            ):
-                for child_obj in self.process_cityobj_element(risk, nogeom_obj):
-                    yield child_obj
+        if risk_paths := processor.disaster_risk_attr_conatiner_path:
+            if isinstance(risk_paths, str):
+                risk_paths = [risk_paths]
+            for path in risk_paths:
+                for risk in elem.iterfind(path + "/*", nsmap):
+                    for child_obj in self.process_cityobj_element(risk, nogeom_obj):
+                        yield child_obj
 
         # 入れ子属性
         if processor.nested_attributes:

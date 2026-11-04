@@ -29,6 +29,8 @@ BASE_NS = {
     "uro2": "https://www.geospatial.jp/iur/uro/2.0",
     "urf2": "https://www.geospatial.jp/iur/urf/2.0",
     "uro3": "https://www.geospatial.jp/iur/uro/3.0",
+    "uro31": "https://www.geospatial.jp/iur/uro/3.1",
+    "uro32": "https://www.geospatial.jp/iur/uro/3.2",
     "urf3": "https://www.geospatial.jp/iur/urf/3.0",
 }
 """XML Namespaces used in PLATEAU 3D City Models"""

@@ -134,7 +134,10 @@ UNDERGROUND_BUILDING = FeatureProcessingDefinition(
         # TODO: uro:indoorBuildingAttribute
         # (TODO: uro:ifcBuildingAttribute)
     ],
-    disaster_risk_attr_conatiner_path="./uro:buildingDisasterRiskAttribute",
+    disaster_risk_attr_conatiner_path=[
+        "./uro:buildingDisasterRiskAttribute",
+        "./uro:bldgDisasterRiskAttribute",
+    ],
     dm_attr_container_path="./uro:bldgDmAttribute",
     facility_attr_paths=FacilityAttributePaths(
         facility_id="./uro:bldgFacilityIdAttribute",

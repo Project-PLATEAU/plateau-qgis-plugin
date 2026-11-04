@@ -115,8 +115,8 @@ class FeatureProcessingDefinition:
     facility_attr_paths: FacilityAttributePaths | None = None
     """施設管理の応用スキーマ関連の属性への element path"""
 
-    disaster_risk_attr_conatiner_path: str | None = None
-    """災害リスク属性 uro:(Building)DisasterRiskAttribute を包含する要素への element path"""
+    disaster_risk_attr_conatiner_path: str | Sequence[str] | None = None
+    """災害リスク属性 uro:(Building)DisasterRiskAttribute を包含する要素への element path (複数指定可)"""
 
     nested_attributes: list[str] | None = None
     """ネストされた属性として表現すべき属性"""
@@ -178,6 +178,8 @@ class ProcessorRegistory:
                 yield "uro15:" + n
                 yield "uro2:" + n
                 yield "uro3:" + n
+                yield "uro31:" + n
+                yield "uro32:" + n
             elif prefix == "urf":
                 yield "urf14:" + n
                 yield "urf15:" + n
