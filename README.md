@@ -1,6 +1,6 @@
 # PLATEAU QGIS Plugin
 
-オープンソースの GIS アプリケーション [QGIS](https://www.qgis.org/) で「PLATEAU 3D 都市モデル」を読み込むためのプラグイン（ベータ版）です。PLATEAU の「3D 都市モデル標準製品仕様書 第 3.0 版」に対応した CityGML ファイルを読み込むことができます。
+オープンソースの GIS アプリケーション [QGIS](https://www.qgis.org/) で「PLATEAU 3D 都市モデル」を読み込むためのプラグイン（ベータ版）です。PLATEAU の「3D都市モデル標準製品仕様書 第3.0版」に対応した CityGML ファイルを読み込むことができます。
 
 [静岡県沼津市の CityGML (v2)](https://www.geospatial.jp/ckan/dataset/plateau-22203-numazu-shi-2021/resource/758fe63a-b20f-4d5d-817d-c35eac530143) を読み込んで、LOD3 のデータを Qgis2threejs で表示した例：
 
@@ -47,9 +47,9 @@ QGIS の基本から紹介しているため、QGIS を初めて触る方にも�
 
 ## ライセンス
 
-本ソフトウェアのソースコードは GPL v2 でライセンスされています。ソースコードおよび関連ドキュメントの著作権は国土交通省に帰属します。
+本ソフトウェアのソースコードは GPL v2 でライセンスされています。ソースコードおよび関連ドキュメントの著作権は開発者および国土交通省に帰属します。
 
-本ソフトウェアは[株式会社 MIERUNE](https://www.mierune.co.jp/)が開発しました。本リポジトリに含まれている [plateau-py](https://github.com/MIERUNE/plateau-py) は MIT ライセンスで公開しています。
+本ソフトウェアは[株式会社MIERUNE](https://www.mierune.co.jp/)が開発しました。
 
 本ドキュメントは Project PLATEAU のサイトポリシー（CC BY 4.0 および政府標準利用規約 2.0）に従い提供されています。
 
@@ -63,7 +63,6 @@ QGIS の基本から紹介しているため、QGIS を初めて触る方にも�
 
 - 問題を報告したい方は GitHub の [Issue](https://github.com/MIERUNE/plateau-qgis-plugin/issues) または [Pull Request](https://github.com/MIERUNE/plateau-qgis-plugin/pulls) をご利用ください。
 - QGIS 3.28 で動作させるため Python 3.9 の文法で実装する必要があります。
-- PLATEAU CityGML ファイルの解析処理は [plateau-py](https://github.com/MIERUNE/plateau-py) パッケージとして分離されています。
 
 QGIS にデプロイする:
 
@@ -71,14 +70,8 @@ QGIS にデプロイする:
 make deploy
 ```
 
-最新の `plateau-py` を取り込む:
-
-```console
-make update_dependencies
-```
-
 ## Authors
 
-- Taku Fukada ([@ciscorn](https://github.com/ciscorn)) - original author
+- Taku Fukada ([@ciscorn](https://github.com/ciscorn))
 - MIERUNE Inc.
 - and all contributors!
